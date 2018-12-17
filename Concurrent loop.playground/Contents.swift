@@ -16,8 +16,8 @@ var x = 0
 var z = 9
 
 func performTaskInConcurrent(with completion: @escaping () -> ()){
-    let group = DispatchGroup()
     
+    let group = DispatchGroup()
     let concurrentQueue = DispatchQueue.init(label: "Concurrent", attributes: .concurrent)
     
     while z < 252{
